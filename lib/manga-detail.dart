@@ -9,7 +9,9 @@ class MangaDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
+        child: Hero(
+      tag: 'manga' + manga.name,
       child: Text(manga.name),
-    );
+    ));
   }
 }
